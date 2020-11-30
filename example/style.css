@@ -10,7 +10,9 @@ body {
     flex-direction: row;
     justify-content: center;
     background-color: #150620;
-    font-family: Poppins;       
+    font-family: Poppins;
+    background: url(../assets/17520.jpg) no-repeat padding-box; 
+    background-size: 100%vh; 
 }
 
 .band {
