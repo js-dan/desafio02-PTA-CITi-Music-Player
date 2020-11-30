@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap');
+
+* {
+    margin: 0;
+  }
+
+body {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: #150620;
+    font-family: Poppins;       
+}
+
+.band {
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+.logo_banda {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 420px;
+    height: 150px;
+    background-color: #ffc31f;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 2px rgba(0, 255, 242, 0.664);
+}
+
+.logo_banda img {
+    width: 250px;    
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 420px;
+    background-color: #F1F1F1;
+    border-radius: 15px;
+    box-shadow: 0 2px 2px rgba(0, 255, 242, 0.664);
+}
+
+.about img {
+    margin-top: 10px;
+    width: 400px;
+    border-radius: 5%;
+}
+
+.band_description {
+    display: flex;
+    flex-direction: column;
+    align-items: left;    
+}
+
+.band_description h1 {
+    margin: 20px 0 0 10px;    
+}
+
+.band_description p {
+    margin: 0 10px 10px;
+}
+
+.musics {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.player {
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #F1F1F1;
+    position: relative;
+    padding: 1em;
+    margin: 0 0 10px 100px;
+    border-radius: 15px;
+    box-shadow: 0 2px 2px rgba(0, 255, 242, 0.664);
+}
+
+.controls {
+    display: flex;
+    justify-content: center;    
+}
+
+.controls button {
+    margin-left: 5px;
+    margin-bottom: 5%;
+}
+
+.controls button:first-child {
+    margin-left: 0px;
+}
+
+.action {
+    padding: 1em;
+}
+
+.progress-bar {
+    position: absolute;
+    background: rgb(4, 255, 109);
+    height: 7%;
+    width: 0%;
+    left: 0;
+    bottom: 10%;    
+}
