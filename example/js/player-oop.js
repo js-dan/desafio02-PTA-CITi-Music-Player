@@ -35,5 +35,13 @@ class Player {
       } = this.audioElement;
       this.progressBar.style.width = `${100 * currentTime / duration}%`;
     });
+
+    this.progressBar.addEventListener('click', () => {
+      const progressBar = this.progressBar.getBoundingClientRect();
+      const x = event.clientX;
+      const progress = Math.round(((x - progressBar.left) / (progressBar.right - progressBar.left)) * 100);
+      console.log(progress);
+      this.audio.currentTime = (progress * this.audio.duration) / 100;
+    })
   }
 }
